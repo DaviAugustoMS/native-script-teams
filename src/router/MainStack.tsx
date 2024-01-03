@@ -2,8 +2,8 @@ import { BaseNavigationContainer } from "@react-navigation/core";
 import * as React from "react";
 import { stackNavigatorFactory } from "react-nativescript-navigation";
 
-import { Login } from "./Login";
-import { ScreenTwo } from "./ScreenTwo";
+import { Login } from "@/screens/login";
+import { Home } from "@/screens/home";
 
 const StackNavigator = stackNavigatorFactory();
 
@@ -22,7 +22,7 @@ export const MainStack = () => (
       }}
     >
       <StackNavigator.Screen name="Login" component={Login} />
-      <StackNavigator.Screen name="Two" component={ScreenTwo} />
+      <StackNavigator.Screen name="Home" component={Home} />
     </StackNavigator.Navigator>
   </BaseNavigationContainer>
 );

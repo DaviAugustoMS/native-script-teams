@@ -3,7 +3,7 @@
  */
 export type MainStackParamList = {
   Login?: {};
-  Two: {
+  Home: {
     message: string;
   };
 };
